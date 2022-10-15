@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+
+    <style>
+                
+        body{
+            background: #0F2027;
+            background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            color:white;
+        }
+
+        .input{
+            display:flex;
+            place-items: center;
+            flex-direction: column;
+            gap:10px;
+        }
+
+
+        .check{
+            display:flex;
+            gap:10px;
+        }
+
+        .input >button{   
+            padding:10px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: border-color 0.7s;
+        }
+
+        .input > button:hover{
+            border-color:#646cff;
+        }
+
+        .input > input{
+            padding:5px;
+            border:2px solid transparent;
+            border-radius: 5px;
+        }
+    </style>
+
+    <div class="input">
+        <input type="text" placeholder="Name" id="name">
+        <input type="password" placeholder="Password"id="pass">
+        <input type="password" placeholder="Verify Password" id="vpass">
+        <input type="email" placeholder="Email" id="email">
+        <div class="check">
+            <label for="">Accept terms</label><input type="checkbox" id="check">
+        </div>
+        <button onclick="register()">Register</button>
+        <button id="main">back to main page</button>
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

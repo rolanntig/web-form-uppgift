@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+
+
+
+    <style>
+               
+        body{
+            background: #0F2027;
+            background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+            color:white;
+        }
+        
+        .input{
+            display: flex;
+            place-items: center;
+            flex-direction: column;
+            gap:10px;
+            margin-top:15px;
+        }
+
+        .formz > button{
+            margin-left:565px;
+            margin-top:15px;
+        }
+
+        
+        button{   
+            padding:10px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: border-color 0.7s;
+        }
+
+        button:hover{
+            border-color:#646cff;
+        }
+
+        .input > input{
+            padding:5px;
+            border:2px solid transparent;
+            border-radius: 5px;
+        }
+
+
+    </style>
+    <div class="formz">
+        <form class="input" action="./loggedin.html">
+            <input type="text" placeholder="Name" id="name" minlength="6" maxlength="8" required />
+            <input type="password" placeholder="Password" id="pass" required />
+            <input type="email" placeholder="Email" id="email" required />
+            <div class="check">
+                <label for="">Accept terms</label><input type="checkbox" id="check" required />
+            </div>
+            <input type="submit">
+        </form>
+        <button onclick="document.location.href = './home.html'">back to main page</button>
+    </div>
+
+</body>
+</html>
