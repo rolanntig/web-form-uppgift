@@ -65,10 +65,9 @@ function register(){
 
     //if the password and the verify password don't match it will return a error
     if(pass === vpass){
-        alert("pass");
         passer = true;
     }else{
-        alert("no pass")
+        alert("password does not match")
         passer = false;
     }
 
@@ -78,13 +77,11 @@ function register(){
         alert("not valid email");
         passer = false;
     }else{
-        alert("valid email");
         passer = true;
     }
 
     //checks if the checkbox is chekced
     if(document.getElementById('check').checked){
-        alert("checked");
         passer = true;
     }else{
         alert("did not check");
@@ -93,7 +90,7 @@ function register(){
     
     //if it is true it will register you otherwise it won't
     if(passer === true){
-    document.location.href = '/index2.html'
+    document.location.href = '/loggedin.html'
 
     }else{
     alert("you have to fill everything out");
