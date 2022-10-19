@@ -10,16 +10,15 @@ function compare(a ,b) {
 //function that randomizes a number then puts it into array named arr
 function array(arr){
 
-    // for loop that loops 10
-    for(let i = 0;i<=10;i++){
+    // while loop that loops 10
+    while(arr.length < 10){
 
         //slumpar ett tal mellan 1-100
         let rand = Math.floor(Math.random() * 101);
         
         //if randomized number is in the array already it will re randomize
         if(arr.includes(rand)){
-            let rand = Math.floor(Math.random() * 101);
-            arr.push(rand)
+            continue;
         }else{
             arr.push(rand);
         }
@@ -107,5 +106,5 @@ function reg2(){
 document.getElementById("main").addEventListener('click',() => document.location.href = "./home.html");
 
 
-
+//svenska e svårt
 
